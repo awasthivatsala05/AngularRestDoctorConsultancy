@@ -16,15 +16,15 @@ export class DoctorService {
     getList(): Observable<any> {
       return this.http.get(`${this.baseUrl}/doctor`);
     }
-    deletedoctor(id:number):Observable<any>{
-      return this.http.delete(`${this.baseUrl}/${id}`,{responseType:'text'});
+    deletedoctor(doctorid:number):Observable<any>{
+      return this.http.delete(`${this.baseUrl}/${doctorid}`,{responseType:'text'});
       
     }
     getPatient(): Observable<any> {
       return this.http.get(`${this.baseUrl}/patient`);
     }
-    deletepatient(patientid:number):Observable<any>{
-      return this.http.delete(`${this.baseUrl}/patient/${patientid}`,{responseType:'text'});
+    deletepatient(patientId:number):Observable<any>{
+      return this.http.delete(`${this.baseUrl}/patient/${patientId}`,{responseType:'text'});
       
     }
 }

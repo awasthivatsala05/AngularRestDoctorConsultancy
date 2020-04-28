@@ -18,13 +18,13 @@
         <tbody >
         <tr *ngFor="let doctor of doctors | async" class="font-italic" >
             
-            <td>{{ doctor.id }}</td>
+            <td>{{ doctor.doctorid }}</td>
             <td>{{ doctor.name }}</td>
             <td>{{ doctor.phoneNum }}</td>
             <td>{{ doctor.email }}</td>
             <td>{{ doctor.dob }}</td>
             <td>{{ doctor.specialization }}</td>
-          <td><button (click)="deletedoctor(doctor.id)" class="btn btn-danger">Delete</button>
+          <td><button (click)="deletedoctor(doctor.doctorid)" class="btn btn-danger">Delete</button>
             </td>
             </tr>
         </tbody>

@@ -21,8 +21,8 @@ export class DoctorListComponent implements OnInit {
   reloadData(){
     this.doctors=this.doctorService.getList();
   }
-  deletedoctor(id:number){
-    this.doctorService.deletedoctor(id)
+  deletedoctor(doctorid:number){
+    this.doctorService.deletedoctor(doctorid)
     .subscribe(
       data=>{
         console.log(data);

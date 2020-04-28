@@ -1,6 +1,6 @@
 export class Doctor{
 
-    id:number;
+    doctorid:number;
     name:string;
     password:string;
     phoneNum:string;
